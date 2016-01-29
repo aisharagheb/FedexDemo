@@ -29,16 +29,16 @@ angular.module( 'orderCloud', [
     .config( Routing )
     .config( ErrorHandling )
     .controller( 'AppCtrl', AppCtrl )
-    .constant("appname", "OrderCloud AngularJS Seed")
+    .constant("appname", "FedEx")
 
     //App Constants used by the OrderCloud SDK
     .constant("ocscope", "FullAccess")
-    .constant("clientid", "0854871D-1492-42CD-AC95-C31139ACC916")
-    .constant("buyerid", "Buyer001")
+    .constant("clientid", "fc60db55-3875-431b-a8cf-f76fb0755620")
+    .constant("buyerid", "FedEx")
 
     //OrderCloud Base URLs
-    .constant("authurl", "http://core.four51.com:11629/oauth/token")
-    .constant("apiurl", "http://core.four51.com:9002")
+    .constant("authurl", "https://auth.ordercloud.io/oauth/token")
+    .constant("apiurl", "https://api.ordercloud.io")
 
 ;
 
