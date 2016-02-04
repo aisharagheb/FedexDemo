@@ -40,7 +40,7 @@ gulp.task('testServe', function() {
 
 gulp.task('protractor', function () {
     return gulp
-        .src(config.src + '**/login.test.js', config.src + '**/*.test.js')
+        .src('./tests/scenario2.test.js')
         .pipe(protractor({
             configFile: './protractor.config.js',
             args: ['--baseUrl', 'http://localhost:8000'],
