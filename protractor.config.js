@@ -17,6 +17,12 @@ exports.config = {
     // The address of a running selenium server.
     seleniumAddress: 'http://localhost:4444/wd/hub',
 
+
+    //sets window size to 1600x1000 at the start of each test
+    onPrepare: function() {
+        browser.manage().window().setSize(1600,1000);
+    },
+
     // Capabilities to be passed to the webdriver instance.
     capabilities: browsers.chrome,
 
@@ -24,9 +30,7 @@ exports.config = {
     // to protractor (in this example conf.js).
     // They may include glob patterns.
     specs: [
-        './src/**/login.test.js',
-        './src/**/*.test.js',
-        './src/**/logout.test.js'
+        './tests/**/*.test.js'
     ],
 
     // Options to be passed to Jasmine-node.
